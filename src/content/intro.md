@@ -17,25 +17,25 @@ Ionic 框架专注于前端用户体验，以及应用程序的 UI 交互（其�
 目前，Ionic 框架提供了开箱即用的 <a href="https://angular.io/" target="_blank">Angular</a> 支持，而对 <strong>Vue</strong> 及 <strong>React</strong> 的支持则还在开发之中。如果你想在入坑之前了解更多关于 Ionic 框架的基础知识，可以观看我们制作的一段<a href="https://youtu.be/p3AN3igqiRc" target="_blank">介绍视频</a>。
 </p>
 
-## Goals
+## 目标
 
-### Cross-platform
+### 跨平台
 
-Build and deploy apps that work across multiple platforms, such as native iOS, Android, desktop, and the web as a Progressive Web App - all with one code base. Write once, run anywhere.
+构建并部署可跨越多个平台运行的应用程序，其中包括了 iOS, Android, 桌面端，以及 Progressive Web App 形式的 Web 端 - 所有这些都仅仅只依赖同一个代码库。一次编码， 随处运行。
 
-### Web Standards-based
+### 基于 Web 标准
 
-Ionic Framework is built on top of reliable, [standardized web technologies](/docs/faq/glossary#web-standards): HTML, CSS, and JavaScript, using
-modern Web APIs such as Custom Elements and Shadow DOM. Because of this, Ionic components have a stable API, and aren't at the whim of a single platform vendor.
+Ionic 框架基于可靠、[标准化的 Web 技术](/docs/faq/glossary#web-standards)之上：HTML, CSS, 以及 JavaScript，使用了现代的
+Web API（如 Custom Elements 和 Shadow DOM）。正因如此，Ionic 组件拥有稳定的 API，而不是某个平台供应商一时兴起的产物。
 
-### Beautiful Design
+### 设计精美
 
-Clean, simple, and functional. Ionic Framework is designed to work and display beautifully out-of-the-box across all platforms.
-Start with pre-designed components, typography, interactive paradigms, and a gorgeous (yet extensible) base theme.
+干净，简洁，且实用。Ionic 
+框架旨在在所有平台上都能开箱即用、美轮美奂。其内置了经过预先设计的组件、字体、互动范例，以及一套优雅（并且可扩展）的基础主题。
 
-### Simplicity
+### 简单
 
-Ionic Framework is built with simplicity in mind, so that creating Ionic apps is enjoyable, easy to learn, and accessible to just about anyone with web development skills.
+Ionic 框架在设计过程之中就考虑了简单性，因此创造 Ionic 应用程序是一件十分有趣的事情。它易于学习，几乎任何拥有 Web 开发技能的人都可以使用。
 
 ## License
 
