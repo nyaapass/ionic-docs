@@ -37,11 +37,11 @@ Web API（如 Custom Elements 和 Shadow DOM）。正因如此，Ionic 组件拥
 
 Ionic 框架在设计过程之中就考虑了简单性，因此创造 Ionic 应用程序是一件十分有趣的事情。它易于学习，几乎任何拥有 Web 开发技能的人都可以使用。
 
-## License
+## 许可证
 
-Ionic Framework is a free and open source project, released under the permissable <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license</a>. This means it can be used in personal or commercial projects for free. MIT is the same license used by such popular projects as jQuery and Ruby on Rails.
+Ionic 框架是一个免费并且开源的项目，采用宽松的 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT 许可证</a>进行发布。这也就意味着它可以被免费地用于个人及商业项目中。许多流行的开源项目，比如 jQuery 以及 Ruby on Rails 都是使用 MIT 许可进行授权的。
 
-This documentation content (found in the <a href="https://github.com/ionic-team/ionic-docs" target="_blank">ionic-docs</a> repo) is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2 license</a>.
+而本文档的内容（位于 <a href="https://github.com/ionic-team/ionic-docs" target="_blank">ionic-docs</a> 仓库）则是基于 <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2 许可证</a>授权发布。
 
 ## Ionic CLI
 
