@@ -45,7 +45,7 @@ Ionic 框架是一个免费并且开源的项目，采用宽松的 <a href="http
 
 ## Ionic CLI
 
-The official [Ionic CLI](/docs/cli/overview), or Command Line Interface, is a tool that quickly scaffolds Ionic apps and provides a number of helpful commands to Ionic developers. In addition to installing and updating Ionic, the CLI comes with a built-in development server, build and debugging tools, and much more. If you are an [Ionic Pro](#ionic-pro) member, the CLI can be used to perform cloud builds and deployments, and administer your account.
+借助 Ionic 官方提供的 [Ionic CLI](/docs/cli/overview) 脚手架，开发者可以快速搭建 Ionic 应用程序，并使用其自带的大量实用命令行工具。除了安装和更新 Ionic 之外，该脚手架也内置了开发服务器、构建及调试工具等。如果你是 [Ionic Pro](#ionic-pro) 用户，还可以使用该脚手架在云端构建部署 Ionic 应用程序，以及管理 Ionic 账户。
 
 ## Framework Compatibility
 
