@@ -47,10 +47,10 @@ Ionic 框架是一个免费并且开源的项目，采用宽松的 <a href="http
 
 借助 Ionic 官方提供的 [Ionic CLI](/docs/cli/overview) 脚手架，开发者可以快速搭建 Ionic 应用程序，并使用其自带的大量实用命令行工具。除了安装和更新 Ionic 之外，该脚手架也内置了开发服务器、构建及调试工具等。如果你是 [Ionic Pro](#ionic-pro) 用户，还可以使用该脚手架在云端构建部署 Ionic 应用程序，以及管理 Ionic 账户。
 
-## Framework Compatibility
+## 框架兼容性
 
-While past releases of Ionic were tightly coupled to Angular, V4 of the framework was re-engineered to work as a standalone Web Component library, with integrations for the latest JavaScript frameworks, like Angular. Ionic can be used
-in most frontend frameworks with success, including React and Vue, though some frameworks need a shim for full Web Component support.
+虽然过去所发布的 Ionic 版本都依赖于 Angular，但经过 V4 版本的重写，Ionic 框架既可以作为一个独立的 Web Component 库，也可以集成最新的 JavaScript 框架（如 Angular）。如今的 Ionic 
+可被用在大多数现代前端框架中（其中就包括了 React 和 Vue），尽管某些框架需要一些额外的处理才获得完整的 Web Component 支持。
 
 ### JavaScript
 
