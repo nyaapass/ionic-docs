@@ -58,6 +58,7 @@ export const main = {
   'Dev Resources': {
     'Books': '/docs/developer-resources/books',
     'Courses': '/docs/developer-resources/courses',
+    'Guides': '/docs/developer-resources/guides',
     'Posts': '/docs/developer-resources/posts',
     'Tools': '/docs/developer-resources/tools',
     'Videos': '/docs/developer-resources/videos',
@@ -82,7 +83,10 @@ export const pro = {
   'Automation': {
     'Introduction': '/docs/pro/automation/intro',
     'Manage': '/docs/pro/automation/create',
-    'Webhooks': 'docs/pro/automation/webhooks'
+    'Webhooks': '/docs/pro/automation/webhooks'
+  },
+  'Environments': {
+    'Introduction': '/docs/pro/environments/intro'
   }
 };
 
