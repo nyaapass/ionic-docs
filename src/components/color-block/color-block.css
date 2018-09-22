@@ -10,6 +10,7 @@ color-block {
 
   padding: 1em;
 
+  background: inherit;
   border: 0;
   box-shadow: 0 4px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.08);
   border-radius: 4px;
@@ -48,12 +49,23 @@ color-block {
 
 .color-name,
 .color-value {
+  width: 10%;
+
   white-space: nowrap;
+}
+
+.color-property {
+  word-break: break-word;
+  width: 45%;
 }
 
 .color-property code {
   white-space: pre-wrap;
   margin-left: 0;
+}
+
+.color-description {
+  width: 35%;
 }
 
 .color-block {
@@ -71,3 +83,13 @@ color-block {
   vertical-align: middle;
 }
 
+/* TODO this is a temporary fix until a new Ionic version is released */
+.temp-fix ion-list,
+.temp-fix ion-list-header {
+  margin-bottom: 0;
+}
+
+.temp-fix ion-label {
+  margin-top: 0;
+  margin-bottom: 0;
+}
