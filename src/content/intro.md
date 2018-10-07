@@ -54,7 +54,7 @@ Ionic 框架是一个免费并且开源的项目，采用宽松的 <a href="http
 
 ### JavaScript
 
-One of the main goals with Ionic 4 was to remove any hard requirement on a single framework to host the components. This means the core components can work standalone with just a script tag in a web page. While working with frameworks can be great for larger teams and larger apps, it is now possible to use Ionic as a standalone library in a single page even in a context like WordPress.
+不依赖任何前端框架独立使用，是 Ionic 4 的主要目标之一。This means the core components can work standalone with just a script tag in a web page. While working with frameworks can be great for larger teams and larger apps, it is now possible to use Ionic as a standalone library in a single page even in a context like WordPress.
 
 ### Angular
 
