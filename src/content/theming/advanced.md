@@ -41,10 +41,10 @@ To change the default values of a color, all of the listed variations for that c
 }
 ```
 
-When `secondary` is applied to a button, not only is the base color (`#006600`) used, but the contrast color (`#ffffff`) is used for the text, along with shade (`#005a00`) and tint (`1a751a`) colors for the different states of the button.
+When `secondary` is applied to a button, not only is the base color (`#006600`) used, but the contrast color (`#ffffff`) is used for the text, along with shade (`#005a00`) and tint (`#1a751a`) colors for the different states of the button.
 
 <blockquote>
-  Not sure how to get the variation colors from the base color? Try out our [Color Generator](/docs/theming/color-generator) that calculates out all of the variations and provides code to copy/paste into an app!
+  Not sure how to get the variation colors from the base color? Try out our [Color Generator](/docs/theming/color-generator) that calculates all of the variations and provides code to copy/paste into an app!
 </blockquote>
 
 See the [CSS Variables documentation](/docs/theming/css-variables#setting-values) for more information on how to set CSS variables.
@@ -60,25 +60,24 @@ The application colors are used in multiple places in Ionic. These are useful fo
 
 | Name                                     | Description                                         |
 | ---------------------------------------- | --------------------------------------------------- |
-| `--ion-backdrop-color`                   | Color the backdrop component                        |
+| `--ion-backdrop-color`                   | Color of the Backdrop component                     |
 | `--ion-overlay-background-color`         | Background color of the overlays                    |
 | `--ion-border-color`                     | Border color                                        |
 | `--ion-box-shadow-color`                 | Box shadow color                                    |
-| `--ion-tabbar-background-color`          | Background color of the tabbar                      |
-| `--ion-tabbar-background-color-focused`  | Background color of the focused tabbar              |
-| `--ion-tabbar-border-color`              | Border color of the tabbar                          |
-| `--ion-tabbar-text-color`                | Text color of the tabbar                            |
-| `--ion-tabbar-text-color-active`         | Text color of the active tab                        |
-| `--ion-toolbar-background-color`         | Background color of the toolbar                     |
-| `--ion-toolbar-border-color`             | Border color of the toolbar                         |
-| `--ion-toolbar-color-inactive`           | Color of the toolbar                                |
-| `--ion-toolbar-color-active`             | Color of the active toolbar                         |
-| `--ion-toolbar-text-color`               | Text color of the toolbar                           |
-| `--ion-item-background-color`            | Background color of the item                        |
-| `--ion-item-background-color-active`     | Background color of the active item                 |
-| `--ion-item-border-color`                | Border color of the item                            |
-| `--ion-item-text-color`                  | Text color of the item                              |
-| `--ion-placeholder-text-color`           | Text color of the item placeholder                  |
+| `--ion-tab-bar-background`               | Background of the Tab bar                           |
+| `--ion-tab-bar-background-focused`       | Background of the focused Tab bar                   |
+| `--ion-tab-bar-border-color`             | Border color of the Tab bar                         |
+| `--ion-tab-bar-color`                    | Color of the Tab bar                                |
+| `--ion-tab-bar-color-activated`          | Color of the activated Tab                          |
+| `--ion-toolbar-background`               | Background of the Toolbar                           |
+| `--ion-toolbar-border-color`             | Border color of the Toolbar                         |
+| `--ion-toolbar-color`                    | Color of the components in the Toolbar              |
+| `--ion-toolbar-color-activated`          | Color of the activated components in the Toolbar    |
+| `--ion-item-background`                  | Background of the Item                              |
+| `--ion-item-background-activated`        | Background of the activated Item                    |
+| `--ion-item-border-color`                | Border color of the Item                            |
+| `--ion-item-color`                       | Color of the components in the Item                 |
+| `--ion-placeholder-color`                | Color of the placeholder in inputs                  |
 
 
 ### Stepped Colors
@@ -145,19 +144,21 @@ While the previously mentioned variables are useful for changing the colors of a
 
 ### Application Variables
 
-| Name                                     | Description                                        |
-| ---------------------------------------- | -------------------------------------------------- |
-| `--ion-font-family`                      | Font family of the app                             |
-| `--ion-statusbar-padding`                | Statusbar padding top of the app                   |
-| `--ion-safe-area-top`                    | Adjust the safe area inset top of the app          |
-| `--ion-safe-area-right`                  | Adjust the safe area inset right of the app        |
-| `--ion-safe-area-bottom`                 | Adjust the safe area inset bottom of the app       |
-| `--ion-safe-area-left`                   | Adjust the safe area inset left of the app         |
+| Name                                     | Description                                                                                     |
+| -----------------------------------------| ------------------------------------------------------------------------------------------------|
+| `--ion-font-family`                      | Font family of the app                                                                          |
+| `--ion-statusbar-padding`                | Statusbar padding top of the app                                                                |
+| `--ion-safe-area-top`                    | Adjust the safe area inset top of the app                                                       |
+| `--ion-safe-area-right`                  | Adjust the safe area inset right of the app                                                     |
+| `--ion-safe-area-bottom`                 | Adjust the safe area inset bottom of the app                                                    |
+| `--ion-safe-area-left`                   | Adjust the safe area inset left of the app                                                      |
+| `--ion-margin`                           | Adjust the margin of the [Margin attributes](/docs/layout/css-utilities#element-margin)         |
+| `--ion-padding`                          | Adjust the padding of the [Padding attributes](/docs/layout/css-utilities#element-padding)      |
 
 ### Grid Variables
 
 | Name                                     | Description                                        |
-| ---------------------------------------- | -------------------------------------------------- |
+| -----------------------------------------| ---------------------------------------------------|
 | `--ion-grid-columns`                     | Number of columns in the grid                      |
 | `--ion-grid-padding-xs`                  | Padding of the grid for xs breakpoints             |
 | `--ion-grid-padding-sm`                  | Padding of the grid for sm breakpoints             |
