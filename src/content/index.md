@@ -41,7 +41,7 @@ hideFooter: true
 
 <ul class="others">
   <li class="cli">
-    <stencil-route-link url="/docs/cli/overview">
+    <stencil-route-link url="/docs/cli">
       <strong>Ionic CLI</strong>
       <span>
         开发 Ionic 应用程序的过程中所使用的主要工具。

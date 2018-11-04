@@ -45,7 +45,7 @@ Ionic 框架是一个免费并且开源的项目，采用宽松的 <a href="http
 
 ## Ionic CLI
 
-借助 Ionic 官方提供的 [Ionic CLI](/docs/cli/overview) 脚手架，开发者可以快速搭建 Ionic 应用程序，并使用其自带的大量实用命令行工具。除了安装和更新 Ionic 之外，该脚手架也内置了开发服务器、构建及调试工具等。如果你是 [Ionic Pro](#ionic-pro) 用户，还可以使用该脚手架在云端构建部署 Ionic 应用程序，以及管理 Ionic 账户。
+借助 Ionic 官方提供的 [Ionic CLI](/docs/cli) 脚手架，开发者可以快速搭建 Ionic 应用程序，并使用其自带的大量实用命令行工具。除了安装和更新 Ionic 之外，该脚手架也内置了开发服务器、构建及调试工具等。如果你是 [Ionic Pro](#ionic-pro) 用户，还可以使用该脚手架在云端构建部署 Ionic 应用程序，以及管理 Ionic 账户。
 
 ## 框架兼容性
 
