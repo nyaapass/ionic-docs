@@ -13,7 +13,7 @@ export class SectionSwitch {
     const selected = activeItem ? activeItem.title : 'Framework';
     return (
       <div class={{ 'section-switch__selector': true, 'is-open': dropdown.isOpen }}>
-        <a class="section-switch__logo" href="/docs">
+        <a class="section-switch__logo" href="/docs/">
           <Ionic/>
           <span>Docs</span>
         </a>
@@ -85,14 +85,14 @@ const options = [
   {
     title: 'Framework',
     subtitle: 'The UI Toolkit for building highly performant apps',
-    url: '/docs',
+    url: '/docs/',
     sections: ['framework', 'api', 'cli']
   },
   {
-    title: 'Pro',
+    title: 'Appflow',
     subtitle: 'Integrated suite of tools & services for shipping apps',
-    url: 'https://ionicframework.com/docs/pro/',
-    sections: ['pro'],
+    url: 'https://ionicframework.com/docs/appflow/',
+    sections: ['appflow'],
     outbound: true
   },
   {

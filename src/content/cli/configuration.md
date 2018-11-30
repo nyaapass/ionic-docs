@@ -19,7 +19,7 @@ The CLI will look for the following environment variables:
 
 * `IONIC_CONFIG_DIRECTORY`: The directory of the global CLI config. Defaults to `~/.ionic`.
 * `IONIC_HTTP_PROXY`: Set a URL for proxying all CLI requests through. See [Using a Proxy](./using-a-proxy).
-* `IONIC_TOKEN`: Automatically authenticates with Ionic Pro.
+* `IONIC_TOKEN`: Automatically authenticates with [Ionic Appflow](https://ionicframework.com/appflow).
 
 ## Flags
 
@@ -31,6 +31,37 @@ CLI flags are global options that alter the behavior of a CLI command.
 * `--no-interactive`: Turn off interactive prompts and fancy outputs. If CI or a non-TTY terminal is detected, the CLI is automatically non-interactive.
 * `--confirm`: Turn on auto-confirmation of confirmation prompts. Careful: the CLI prompts before doing something potentially harmful. Auto-confirming may have unintended results.
 
+## Hooks
+
+The CLI can run scripts during certain events, such as before and after builds. To hook into the CLI, the following [npm scripts](https://docs.npmjs.com/misc/scripts) can be used in `package.json`:
+
+* `ionic:serve:before`: executed before the dev server starts
+* `ionic:serve:after`: executed after the dev server is terminated
+* `ionic:build:before`: executed before a web asset build begins
+* `ionic:build:after`: executed after a web asset build finishes
+
+Hooks can also be defined in `ionic.config.json`. Define a `hooks` object within the project, where each key is the name of the hook (without the `ionic:` prefix), and the value is a path to a JavaScript file or an array of paths.
+
+In the following example, the file is imported and run during the `ionic:build:before` hook.
+
+```json
+"hooks": {
+  "build:before": "./scripts/build-before.js"
+},
+```
+
+JavaScript hook files should export a single function, which is passed a single argument (`ctx`) whenever the hook executes.
+
+The argument is the context given to the hook file, which differs from hook to hook and with different invocations.
+
+`./scripts/build-before.js`:
+
+```javascript
+module.exports = function(ctx) {
+  console.log(ctx);
+};
+```
+
 ## Multi-app Projects
 
 <small>_Available in CLI 4.3.0+_</small>
@@ -41,7 +72,7 @@ The Ionic CLI supports a multi-app configuration setup, which involves multiple 
 
 Multi-app projects are a new feature in the Ionic CLI. The setup is still partly manual.
 
-1. Create a directory and initialize your monorepo (see [Project Structure](#project-structure) for full details).
+1. Create a directory and initialize a monorepo (see [Project Structure](#project-structure) for full details).
 1. Create an `ionic.config.json` file at the root of the repository with the following contents (see [Config File](#config-file) for full details):
 
     ```json
@@ -104,7 +135,7 @@ When a multi-app project is detected, the Ionic CLI will operate under the conte
 
 If a multi-app project is detected during `ionic start`, the CLI will add the app configuration to the root `ionic.config.json` file instead of creating a project-specific one.
 
-You may wish to skip dependency installation using `--no-deps` if your dependencies are hoisted to the root of your monorepo.
+Dependency installation can be skipped using `--no-deps` if dependencies are hoisted to the root of the monorepo.
 
 ```shell
 $ cd apps/
@@ -113,9 +144,15 @@ $ ionic start "My New App" --no-deps
 
 ## Advanced Configuration
 
+### Overriding the Build
+
+Normally, the CLI runs a hard-coded set of commands based on the project type. For example, the standard web asset build for Angular projects is `ng run app:build`. The web asset build can be overridden and `ionic build` can continue to be used by utilizing the `ionic:build` [npm script](https://docs.npmjs.com/misc/scripts). Similarly, the dev server can be overridden by using the `ionic:serve` npm script.
+
+Pay close attention to the flags supplied to the script by the Ionic CLI. Irregularities may occur if options are not respected, especially for livereload on devices.
+
 ### Command Options
 
-You can express command options (normally set with `--opt=value` syntax) with environment variables. The naming of these environment variables follows a pattern: start with `IONIC_CMDOPTS_`, add the command name (replacing any spaces with underscores), add the option name (replacing any hyphens with underscores), and then uppercase everything. Boolean flags (command-line options that don't take a value) can be set to `1` or `0`. Strip the `--no-` prefix in boolean flags, if it exists (`--no-open` in ionic serve can be expressed with `IONIC_CMDOPTS_SERVE_OPEN=0`, for example).
+Command options can be expressed with environment variables. They are normally set with `--opt=value` syntax. The naming of these environment variables follows a pattern: start with `IONIC_CMDOPTS_`, add the command name (replacing any spaces with underscores), add the option name (replacing any hyphens with underscores), and then uppercase everything. Boolean flags (command-line options that don't take a value) can be set to `1` or `0`. Strip the `--no-` prefix in boolean flags, if it exists (`--no-open` in ionic serve can be expressed with `IONIC_CMDOPTS_SERVE_OPEN=0`, for example).
 
 For example, the command options in `ionic cordova run ios -lc --livereload-port=1234 --address=localhost` can also be expressed with this series of environment variables:
 
@@ -126,4 +163,8 @@ $ export IONIC_CMDOPTS_CORDOVA_RUN_LIVERELOAD_PORT=1234
 $ export IONIC_CMDOPTS_CORDOVA_RUN_ADDRESS=localhost
 ```
 
-If these variables are set in your environment, `ionic cordova build ios` will use new defaults for its options.
+If these variables are set in the environment, `ionic cordova build ios` will use new defaults for its options.
+
+### Telemetry
+
+The CLI sends usage data to Ionic to create a better experience. To disable this functionality, run `ionic config set -g telemetry false`.
